@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhcs.admin.iiitdapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Home" />
+        <activity
+            android:name=".ClassroomActivity"
+            android:label="Classroom"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".FoodhubActivity"
+            android:label="Food Hub"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".MenuViewPager"
+            android:parentActivityName=".FoodhubActivity" />
+        <activity
+            android:name=".AddMenuTask"
+            android:parentActivityName=".FoodhubActivity" />
+        <activity android:name=".SingleItemViewDirectory"></activity>
+        <activity
+            android:name=".DirectoryActivity"
+            android:label="Directory"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="Get Help!"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".HealthActivity"
+            android:label="Get Fit"
+            android:parentActivityName=".MenuActivity" />
+
+        <receiver android:name=".AlarmNotificationReceiver" />
+        <receiver android:name=".AlarmToastReceiver" />
+
+        <activity android:name=".TimeTableActivity"
+            android:parentActivityName=".ClassroomActivity"></activity>
+    </application>
+
+</manifest>

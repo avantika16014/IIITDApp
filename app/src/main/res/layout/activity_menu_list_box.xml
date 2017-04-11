@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/todo_list_box"
+        android:layout_height="wrap_content"
+
+        style="@style/BoxStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/todo_title"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:fontFamily="monospace"
+                android:background="@color/greyPrimaryDark"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:fadingEdgeLength="5dp"
+                android:fadingEdge="horizontal|vertical" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

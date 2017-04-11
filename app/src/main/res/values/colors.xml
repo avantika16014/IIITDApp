@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3FADA8</color>
+    <color name="colorPrimaryDark">#00838f</color>
+    <color name="colorAccent">#4dd0e1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMenuItems">#1565c0</color>
+    <color name="colorBackground">#e8eaf6</color>
+    <color name="colorMenuMain">#ff4081</color>
+    <color name="greyPrimary">#71a29890</color>
+    <color name="greyPrimaryDark">#8579726c</color>
+    <color name="myPrimary">#b157aad0</color>
+    <color name="myPrimary2">#dd736e</color>
+    <color name="greydull">#a8a29890</color>
+    <color name="bottomSheetColor">#26a69a</color>
+    <color name="greyLow">#b8a29890</color>
+</resources>

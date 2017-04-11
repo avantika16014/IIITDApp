@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_schedule_selection">
+
+        <TextView
+            android:id="@+id/li_courseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/courseTime_hint"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/li_courseRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/li_courseTime"
+            android:layout_below="@+id/li_courseTime"
+            android:hint="@string/course_room_hint"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/li_courseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/courseType_hint"
+            android:layout_toEndOf="@id/li_courseRoom"
+            android:layout_marginStart="16dp"
+            android:layout_alignBaseline="@id/li_courseRoom"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/li_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="27dp"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

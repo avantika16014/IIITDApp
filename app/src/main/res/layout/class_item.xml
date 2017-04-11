@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/eli_courseType"
+        android:hint="@string/courseType_hint"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eli_courseTime"
+        android:textColor="@color/colorBlack"
+        android:hint="@string/courseTime_hint"
+        android:layout_alignStart="@+id/eli_courseType"
+        android:textSize="14sp"
+        android:layout_below="@+id/eli_courseType"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eli_courseRoom"
+        android:hint="@string/course_room_hint"
+        android:layout_alignStart="@+id/eli_courseType"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:layout_below="@+id/eli_courseTime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eli_prof"
+        android:hint="@string/professor_name"
+        android:layout_alignStart="@+id/eli_courseType"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/eli_courseRoom"/>
+
+
+
+</RelativeLayout>

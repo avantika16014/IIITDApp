@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.dhcs.admin.iiitdapp.MenuActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_bar"
+                android:layout_gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user"
+                    android:id="@+id/profilePhoto"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:hint="Username"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/textview_username"
+                    android:layout_marginStart="17dp"
+                    android:layout_toEndOf="@+id/profilePhoto" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:hint="Email address"
+                    android:id="@+id/textview_email"
+                    android:layout_alignLeft="@id/textview_username"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/textview_username"/>
+            </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLASSES"
+            android:id="@+id/button_class"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+            -->
+
+        <RelativeLayout
+            android:id="@+id/card_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/card_foodhub"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/class2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classes"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_foodhub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/card_class">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_foodhub"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/foodhub2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foodhub"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="34dp"
+            android:layout_toStartOf="@+id/card_class">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_health"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/health" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/health"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/card_health"
+            android:layout_below="@+id/card_health"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="46dp"
+            android:textAlignment="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_help"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="@string/help"
+                    android:src="@drawable/help1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/card_help"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="43dp"
+            android:layout_toEndOf="@+id/card_help">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ic_directory"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/directory1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/directory"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

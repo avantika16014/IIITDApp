@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_directory"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.dhcs.admin.iiitdapp.DirectoryActivity">
+
+<include
+    android:id="@+id/app_bar"
+    layout="@layout/app_bar" />
+
+<EditText
+    android:id="@+id/search"
+    android:layout_below="@id/app_bar"
+    android:layout_width="fill_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content"
+    android:hint="Search ">
+
+    <requestFocus />
+</EditText>
+
+<ListView
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#800080"
+    android:dividerHeight="2dp"
+    android:layout_below="@+id/search" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/namelabel" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/namelabel"
+        android:layout_toEndOf="@+id/namelabel" />
+
+    <TextView
+        android:id="@+id/roomnolabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignStart="@id/namelabel"
+        android:layout_below="@+id/namelabel"
+        android:text="@string/roomnolabel" />
+
+    <TextView
+        android:id="@+id/roomno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/roomnolabel"
+        android:layout_below="@+id/name"
+        android:layout_toEndOf="@+id/roomnolabel" />
+
+    <TextView
+        android:id="@+id/extensionlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/namelabel"
+        android:layout_below="@+id/roomnolabel"
+        android:textStyle="bold"
+        android:text="@string/extensionlabel" />
+
+    <TextView
+        android:id="@+id/extension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/extensionlabel"
+        android:layout_below="@+id/roomno"
+        android:layout_toEndOf="@+id/extensionlabel" />
+
+    <TextView
+        android:id="@+id/emaillabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extensionlabel"
+        android:layout_alignStart="@id/namelabel"
+        android:textStyle="bold"
+        android:text="@string/emaillabel" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/emaillabel"
+        android:layout_below="@+id/extensionlabel"
+        android:layout_toEndOf="@+id/emaillabel" />
+
+</RelativeLayout>

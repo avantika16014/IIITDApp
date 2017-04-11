@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">IIITDApp</string>
+    <string name="signout">Sign Out</string>
+    <string name="foodhub">Food Hub</string>
+    <string name="directory">Directory</string>
+    <string name="help">Get Help!</string>
+    <string name="classes">Classroom</string>
+    <string name="health">Get Fit</string>
+    <string name="time_table">Time Table</string>
+    <string name="hosteler">Hosteler</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_your_courses_hint">Add Your Courses to set the alarm</string>
+    <string name="courseName_hint">Course Name</string>
+    <string name="courseType_hint">Course Type</string>
+    <string name="courseTime_hint">Course Time</string>
+    <string name="searchview_hint">Type your course name here!</string>
+    <string name="submit">Submit</string>
+    <string name="course_room_hint">Course Room</string>
+    <string name="professor_name">Professor Name</string>
+
+    <!-- Mamta resource file -->
+    <string-array name="contact_names">
+
+        <item>Facilities</item>
+        <item>Administration</item>
+        <item>Security</item>
+        <item>IT Help Desk</item>
+        <item>Counsellor</item>
+        <item>Nursing Assistant</item>
+        <item>Doctor</item>
+        <item>Ambulance</item>
+
+
+    </string-array>
+    <string-array name="contact_numbers">
+        <item>01126907566</item>
+        <item>01126907400</item>
+        <item>9868244868</item>
+        <item>01126907576</item>
+        <item>7838732232</item>
+        <item>9650907449</item>
+        <item>9891314535</item>
+        <item>9911143723</item>
+    </string-array>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="gym">gym</string>
+    <string name="yoga">yoga</string>
+
+    <string name="ranklabel">"Rank : "</string>
+    <string name="namelabel">"Name : "</string>
+    <string name="roomnolabel">"Room-no : "</string>
+    <string name="extensionlabel">"Extension : "</string>
+    <string name="emaillabel">"Email : "</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_fit_ness">fitNess</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>
